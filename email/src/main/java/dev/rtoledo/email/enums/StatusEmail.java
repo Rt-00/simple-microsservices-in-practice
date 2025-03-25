@@ -1,4 +1,6 @@
 package dev.rtoledo.email.enums;
 
-public record StatusEmail() {
+public enum StatusEmail {
+  SENT,
+  ERROR
 }

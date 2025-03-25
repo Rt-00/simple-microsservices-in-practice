@@ -1,0 +1,10 @@
+services:
+  db:
+    image: postgres:14.2
+    restart: always
+    environment:
+      POSTGRES_USER: docker
+      POSTGRES_PASSWORD: docker
+      POSTGRES_DB: ms-email
+    ports:
+      - "5433:5432"
